@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 420px) {
+            .red p{
+                width: 50%;
+            }
+        }
+
+        @media screen and(min-width: 320px) {
+            .container{
+                grid-template-columns: [line-name] 300px;
+                grid-template-columns: subgrid;
+            }
+        }
+        .container{
+            grid-template-columns: 200px repeat(auto-fill, 100px) 300px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: grid; " class="container">
+        <div style=" background-color: blue;">
+            <p> i am a student at akirachix and i love reading fiction books and non-fiction ones because they all help me relax in many occasions</p>
+        </div> 
+        <div style=" background-color: rgb(255, 0, 255);">
+            <p> i am a student at akirachix and i love reading fiction books and non-fiction ones because they all help me relax in many occasions</p>
+        </div>
+        <div  style=" background-color: rgb(94, 255, 0);">
+            <p> i am a student at akirachix and i love reading fiction books and non-fiction ones because they all help me relax in many occasions</p>
+        </div>
+        <div  style=" background-color: rgb(255, 0, 0);" class="red">
+            <p> i am a student at akirachix and i love reading fiction books and non-fiction ones because they all help me relax in many occasions</p>
+        </div>
+        <div  style=" background-color: rgb(195, 0, 255);">
+            <p> i am a student at akirachix and i love reading fiction books and non-fiction ones because they all help me relax in many occasions</p>
+        </div>
+       
+    </div>
+</body>
+</html>
